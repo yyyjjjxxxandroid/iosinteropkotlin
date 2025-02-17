@@ -1,0 +1,20 @@
+headers =  libtest.h
+---
+#include <string.h>
+#include <stdlib.h>
+
+char* get_message(char* name) {
+    // 定义问候语
+    char *greeting = "hello, ";
+    // 计算需要分配的内存大小，加上 1 用于存储字符串结束符 '\0'
+    char* message = (char *) malloc(strlen(greeting) + strlen(name) + 1);
+    // 检查内存分配是否成功
+    if (message == NULL) {
+        return NULL; // 内存分配失败，返回 NULL
+    }
+    // 复制问候语到新分配的内存中
+    strcpy(message, greeting);
+    // 拼接名字到问候语后面
+    strcat(message, name);
+    return message;
+}
