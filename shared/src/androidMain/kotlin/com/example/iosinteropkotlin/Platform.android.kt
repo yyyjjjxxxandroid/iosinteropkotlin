@@ -18,7 +18,9 @@ class AndroidPlatform : Platform {
     override val message: String
         get() = getMessage()
     override val mt: String
-        get() = TODO("Not yet implemented")
+        get() = ""
+    override val swift: String
+        get() = ""
 }
 
 actual fun getPlatform(): Platform = AndroidPlatform()
@@ -30,7 +32,7 @@ actual object PlayGroundUtils {
 
 
 actual fun getMessage(): String {
-    TODO("Not yet implemented")
+    return "eee"
 }
 
 actual fun getMT():String {
@@ -38,5 +40,5 @@ actual fun getMT():String {
 }
 
 actual fun getSwift(): String {
-    TODO("Not yet implemented")
+    return "eee"
 }
