@@ -1,18 +1,8 @@
-//
-// Created by DELL on 2023/10/25.
-//
+
 
 #ifndef LIFEGAME_GAME_H
 #define LIFEGAME_GAME_H
 
-/*
-* 该算法来源如下：
-*
-* 作者：Time-Limit
-* 链接：https://leetcode.cn/problems/game-of-life/solution/c-wei-yun-suan-yuan-di-cao-zuo-ji-bai-shuang-bai-b/
-* 来源：力扣（LeetCode）
-* 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-*/
 void updateStep(int **board, int len1, int len2) {
     int dx[] = {-1,  0,  1, -1, 1, -1, 0, 1};
     int dy[] = {-1, -1, -1,  0, 0,  1, 1, 1};

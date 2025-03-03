@@ -14,9 +14,7 @@
     "ios": "16.0"
   },
   "dependencies": {
-    "FirebaseAuth": [
-      "10.16.0"
-    ]
+    "MTGenerateSign": []
   },
   "xcconfig": {
     "ENABLE_USER_SCRIPT_SANDBOXING": "NO"

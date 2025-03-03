@@ -15,6 +15,10 @@ class AndroidPlatform : Platform {
                 )
             ).joinToString { it.joinToString() }
         }
+    override val message: String
+        get() = getMessage()
+    override val mt: String
+        get() = TODO("Not yet implemented")
 }
 
 actual fun getPlatform(): Platform = AndroidPlatform()
@@ -22,4 +26,17 @@ actual object PlayGroundUtils {
     actual fun stepUpdate(sourceData: Array<IntArray>): Array<IntArray> {
         return NativeLib().stepUpdate(sourceData)
     }
+}
+
+
+actual fun getMessage(): String {
+    TODO("Not yet implemented")
+}
+
+actual fun getMT():String {
+    return "eee"
+}
+
+actual fun getSwift(): String {
+    TODO("Not yet implemented")
 }

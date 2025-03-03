@@ -1,5 +1,10 @@
 target 'iosApp' do
+    source 'https://cdn.cocoapods.org'
   use_frameworks!
   platform :ios, '16.0'
   pod 'shared', :path => '../shared'
+#   pod 'FirebaseAuth', '10.16.0'
+#    pod 'YYModel', '1.0.4'
+ pod 'MTGenerateSign', :git => 'http://techgit.meitu.com/iOSModules_public/MTGenerateSign.git', :tag => '1.2.1'
+
 end
